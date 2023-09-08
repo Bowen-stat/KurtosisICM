@@ -16,20 +16,24 @@ kurtosisU = function(X){
 
   I1 = (sum(Xti))^2
   I2 = n*(n-1)*Y1
-  I3 = sum(Xti%*%Xti)-sum(diag(Xti%*%Xti))
+  Xti2 = Xti%*%Xti
+  I3 = sum(Xti2)-sum(diag(Xti2))
   Y2 = (I1-2*I2-4*I3)/(n*(n-1)*(n-2)*(n-3))
 
   J1 = sum(xxt^2)-sum(diag(xxt^2))
-  J2 = sum(xxt%*%xxt)-sum(diag(xxt%*%xxt))-2*(sum(diag(xxt)*xxt)-sum(diag(diag(xxt)*xxt)))
+  xxt2 = xxt%*%xxt
+  xxt3 = diag(xxt)*xxt
+  J2 = sum(xxt2)-sum(diag(xxt2))-2*(sum(xxt3)-sum(diag(xxt3)))
   J3 = (sum(xxt)-sum(diag(xxt)))^2-2*J1-4*J2
   Y3 = 4*J1/(n*(n-1))-8*J2/(n*(n-1)*(n-2))+4*J3/(n*(n-1)*(n-2)*(n-3))
 
   Xh = t(X)%*%(rep(1,n)%*%t(rep(1,n))-diag(n))%*%X
-  J4 = sum((X^2)%*%t(X^2))-sum(diag((X^2)%*%t(X^2)))
+  X22 = (X^2)%*%t(X^2)
+  L1 = sum(X22)-sum(diag(X22))
   Xm = (X^3)%*%t(X)
-  J5 = sum(diag((Xh)*(t(X)%*%X)))-2*(sum(Xm)-sum(diag(Xm)))
-  J6 = sum(diag(Xh^2))-2*J4-4*J5
-  Y4 = 4*J4/(n*(n-1))-8*J5/(n*(n-1)*(n-2))+4*J6/(n*(n-1)*(n-2)*(n-3))
+  L2 = sum(diag((Xh)*(t(X)%*%X)))-2*(sum(Xm)-sum(diag(Xm)))
+  L3 = sum(diag(Xh^2))-2*L1-4*L2
+  Y4 = 4*L1/(n*(n-1))-8*L2/(n*(n-1)*(n-2))+4*L3/(n*(n-1)*(n-2)*(n-3))
 
   T1 = Y1-Y2-2*Y3
   T2 = Y4/2
