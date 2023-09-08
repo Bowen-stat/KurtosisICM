@@ -16,7 +16,7 @@ Ktest(X, k0, alternative = c("two.sided", "less", "greater"))
 \item{alpha}{the confidence level}
 }
 \value{
-A list with class \item{htest} containing the following components:
+A list with class \code{htest} containing the following components:
 \item{statistic}{the list containing kurtosis and related estimators and its transformation.}
 \item{p.value}{the p-value for the test}
 \item{alternative}{a character string describing the alternative hypothesis}

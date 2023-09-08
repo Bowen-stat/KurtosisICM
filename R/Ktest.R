@@ -4,7 +4,7 @@
 #' @param k0 the value of kurtosis under the null hypothesis
 #' @param alpha the confidence level
 #' @param alternative a character string specifying the alternative hypothesis, must be one of '"two.sided"' (default), '"greater"' or '"less"'.
-#' @return A list with class \item{htest} containing the following components:
+#' @return A list with class \code{htest} containing the following components:
 #' \item{statistic}{the list containing kurtosis and related estimators and its transformation.}
 #' \item{p.value}{the p-value for the test}
 #' \item{alternative}{a character string describing the alternative hypothesis}
