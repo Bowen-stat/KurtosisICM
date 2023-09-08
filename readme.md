@@ -19,7 +19,7 @@ set.seed(123)
 library(KurtosisICM)
 n=200
 p=100
-X = matrix(rnorm(n*p),nrow = n)
+X = matrix(rnorm(n*p)+2,nrow = n)
 #estimation
 ka = kurtosisU(X)
 # test if the kurtosis is equal to k0
