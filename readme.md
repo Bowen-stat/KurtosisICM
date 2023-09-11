@@ -1,5 +1,5 @@
 # Introduction for R package KurtosisICM
-We proposed an efficient estimation and statsitical inference on kurtosis of independent component model.
+We proposed efficient estimation and statsitical inference on kurtosis of independent component model.
 # Getting Started
 These instructions will give you a toy example for implementing the package.
 ## Prerequisites
