@@ -1,5 +1,5 @@
 rm(list = ls())
-library(kurtICM)
+library(kurtosisICM)
 library(tictoc)
 setwd("~\\Dropbox\\ZhouBowen\\Kurtosis-ICM\\sim")
 n=100

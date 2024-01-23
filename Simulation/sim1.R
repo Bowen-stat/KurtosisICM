@@ -1,5 +1,5 @@
 rm(list = ls())
-library(kurtICM)
+library(KurtosistICM)
 setwd("~\\Dropbox\\ZhouBowen\\Kurtosis-ICM\\sim")
 n=100
 id=3 #select distribution

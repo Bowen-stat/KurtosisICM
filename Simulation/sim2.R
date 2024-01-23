@@ -1,6 +1,6 @@
 rm(list = ls())
 set.seed(2024)
-library(kurtICM)
+library(kurtosisICM)
 setwd("~\\Dropbox\\ZhouBowen\\Kurtosis-ICM\\sim")
 n=100
 p=200
