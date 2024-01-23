@@ -1,0 +1,13 @@
+Package: kurtosisICM
+Type: Package
+Title: Statistical inference on kurtosis of Independent component model
+Version: 0.1.0
+Date: 2024-01-20
+Author: Bowen Zhou
+Maintainer: Bowen Zhou <bowen_zz@sjtu.edu.cn>
+Description: Functions to calculate: the kurtosis of Independent component model;
+             Test related to the kurtosis.  
+License: TBD-2
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+
